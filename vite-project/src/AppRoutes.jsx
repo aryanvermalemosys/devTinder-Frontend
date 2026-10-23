@@ -4,6 +4,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Layout from "./components/Layout";
 import Login from "./components/Login";
 import Feed from "./components/Feed";
+import EditProfile from "./components/EditProfile";
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
           <Route element={<ProtectedRoute />}>
             <Route element={<Layout />}>
               <Route path="/feed" element={<Feed />} />
+              <Route path="/edit/profile" element={<EditProfile />} />
             </Route>
           </Route>
         </Routes>

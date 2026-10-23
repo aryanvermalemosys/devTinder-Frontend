@@ -25,6 +25,7 @@ const ProtectedRoute = () => {
             id: user.userId,
             firstName: user.firstName,
             lastName: user.lastName,
+            imageURL: user.imageURL,
           }),
         );
 

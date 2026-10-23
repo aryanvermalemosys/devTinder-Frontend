@@ -26,6 +26,7 @@ const Login = () => {
           id: res?.data?.data?.userId,
           firstName: res?.data?.data?.firstName,
           lastName: res?.data?.data?.lastName,
+          imageURL: res?.data?.data?.imageURL,
         }),
       );
       navigate("/feed");
